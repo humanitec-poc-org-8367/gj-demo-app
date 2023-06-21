@@ -1,0 +1,7 @@
+site_name: 'gj-demo-app Docs'
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
