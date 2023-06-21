@@ -2,7 +2,7 @@ name: Deploy Gj-demo-app
 
 on:
   push:
-    branches: main
+    branches: gaurav
 
 concurrency:
   group: ${{ github.ref }}

@@ -1,7 +1,7 @@
 apiVersion: score.dev/v1b1
 
 metadata:
-  name: "gj-demo-app"
+  name: "gj-demo-app-gaurav"
 
 service:
   ports:
