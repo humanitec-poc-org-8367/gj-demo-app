@@ -4,7 +4,8 @@ metadata:
   name: "gj-demo-app-gaurav"
 
 labels:
-  env-type: "development"
+  mylabel:
+    env-type: development
 
 service:
   ports:
