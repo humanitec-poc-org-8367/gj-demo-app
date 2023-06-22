@@ -3,6 +3,9 @@ apiVersion: score.dev/v1b1
 metadata:
   name: "gj-demo-app-gaurav"
 
+labels:
+  env-type: "development"
+
 service:
   ports:
     www:
