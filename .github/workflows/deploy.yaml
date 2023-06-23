@@ -67,12 +67,13 @@ jobs:
           containers:
             frontend:
               image: $ECR/$IMAGE:$TAG
-              limits:
-                memory: "128Mi"
-                cpu:  "500m"
-              requests:
-                memory: "64Mi"
-                cpu: "250m"
+              resources:
+                limits:
+                  memory: "128Mi"
+                  cpu:  "500m"
+                requests:
+                  memory: "64Mi"
+                  cpu: "250m"
           EOF
 
           ./score-humanitec delta --env development --overrides ./humanitec.score.yaml --app gj-demo-app --org="${{ secrets.HUMANITEC_ORG_ID_POC_12 }}" --token "${{ secrets.HUMANITEC_TOKEN_POC_12 }}" --deploy
